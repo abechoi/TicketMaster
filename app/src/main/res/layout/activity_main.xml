@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sushiko.ticketmaster.MainActivity">
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search" />
+
+    <Button
+        android:layout_below="@+id/search_bar"
+        android:id="@+id/enter_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:onClick="onClick"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_below="@id/enter_search"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_below="@id/tv_title"
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Placeholder"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_below="@id/tv_date"
+        android:id="@+id/tv_venue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue and Distance Placeholder"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_below="@+id/tv_venue"
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description Placeholder"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+
+</RelativeLayout>
